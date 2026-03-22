@@ -7,7 +7,7 @@ export default function Home() {
   const [name, setName] = useState("");
 
   const handleRegister = async () => {
-    const res = await fetch("http://localhost:5000/register", {
+    const res = await fetch("https://realtime-project.onrender.com/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -20,7 +20,7 @@ export default function Home() {
   };
 
   const handleLogin = async () => {
-    const res = await fetch("http://localhost:5000/login", {
+    const res = await fetch("https://realtime-project.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -8,7 +8,9 @@ const MonacoEditor = dynamic(
   { ssr: false }
 );
 
-const socket = io("http://localhost:5000");
+const socket = io("https://realtime-project.onrender.com/", {
+  transports: ["websocket"],
+});
 
 export default function Editor() {
   const [code, setCode] = useState("");
